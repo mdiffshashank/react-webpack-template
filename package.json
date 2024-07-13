@@ -9,7 +9,7 @@
     "react-dom": "^18.3.1"
   },
   "scripts": {
-    "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
+    "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,10 +21,12 @@
     "@babel/preset-env": "^7.24.8",
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^7.1.2",
+    "react-refresh": "^0.14.2",
     "style-loader": "^4.0.0",
     "typescript": "^5.5.3",
     "webpack": "^5.93.0",
