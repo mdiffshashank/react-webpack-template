@@ -10,7 +10,6 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"], //do not require to add extension while importing
   },
-  mode: "development", //mode development | production
   module: {
     rules: [
       {
@@ -23,10 +22,10 @@ module.exports = {
         exclude: /node_modules/,
         use: ["style-loader", "css-loader"],
       },
-      // {
-      //   test: /\.(?ico|gif|png|jpg)$/i,
-      //   type: "asset/resource",
-      // },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: "asset/resource",
+      },
       {
         test: /\.(woff(2)?|e01|ttf|otf|svg)$/,
         type: "asset/inline",
