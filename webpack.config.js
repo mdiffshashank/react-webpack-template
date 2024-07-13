@@ -18,6 +18,19 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
       },
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: ["style-loader", "css-loader"],
+      },
+      // {
+      //   test: /\.(?ico|gif|png|jpg)$/i,
+      //   type: "asset/resource",
+      // },
+      {
+        test: /\.(woff(2)?|e01|ttf|otf|svg)$/,
+        type: "asset/inline",
+      },
     ],
   },
   plugins: [
